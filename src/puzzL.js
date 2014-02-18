@@ -87,7 +87,7 @@ puzzL.prototype.init = function(){
 function swap(d1, d2){
 	var index1 = d1.index;
 	var index2 = d2.index;
-	console.log(index1 + " " + index2);
+	
 	
 	var temp_bg = bList[index1].bDiv.css("background-image");
 	var temp_bg_pos = bList[index1].bDiv.css("background-position");
@@ -106,12 +106,12 @@ function shuffle(){
 	for(var i=0; i<bCount;i++){
 		var follIndex = Math.floor((Math.random())*(iList.length-1));
 		var follData = iList[follIndex];
-		//console.log(iList[follIndex]);
+		
 		sList[i] = {};
 		sList[i] = follData;
-		//console.log(iList[follIndex]);
+		
 		iList.splice(follIndex, 1)
-		//console.log(follIndex + " " + iList[follIndex][0] + " " + sList[i][0]);
+		
 	}
 }
 function clearBorders(){
