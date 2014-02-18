@@ -46,7 +46,7 @@ box.prototype.load = function(box, id){
 	var raw_image = funds.image;
 	var i = id[1];
 	var j = id[2];
-	//alert( sList[id][1] + " " + sList[id][2]);
+	
 	div = $(document.createElement('div'));
 	$(div).addClass("partition");
 	$(div).css("height", (he-4) + "px");
