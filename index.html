@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="UTF-8"></meta>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="puzzL.js"></script>
+		<script>
+			$(document).ready(function(){
+				var puzzle = new puzzL({ image:"test.jpg",
+										 partition : 3,
+										 player_name : "zafer",
+										 animation : "none",
+										 width:720,
+										 height:640
+										});
+				puzzle.init();
+			});
+		</script>
+		<link   type="text/css" rel="stylesheet" href="style.css"></link>
+		<title>
+			galmeriol's javascript playground
+		</title>
+	</head>
+	<body>
+		<div id="mainDiv">
+		</div>
+	</body>
+</html>
